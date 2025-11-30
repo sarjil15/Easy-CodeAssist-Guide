@@ -1,6 +1,4 @@
-<h1 align="center"><b>💻 Easy CodeAssist Guide 💻 (Local PC & VPS)</b></h1>
-
-🌟 Overview
+<h2>🌟 Overview</h2>
 
 - **A clean and simple guide to install, configure, and run CodeAssist on both PC and Cloud VPS. Written for beginners and experts — no steps skipped.**
 
@@ -16,6 +14,18 @@
  ✔️ **With or without RL-Swarm running**
 
  ✔️ **With working login via tunneling on VPS**
+
+ <h1 align="center"><b>💻 Easy CodeAssist Guide 💻 (Local PC & VPS)</b></h1>
+
+ <p align="center">
+  <img 
+    src="https://github.com/sarjil15/Easy-CodeAssist-Guide/blob/ef70c8fbc15510c7f444d590b677a162c925c483/assets/Screenshot%202025-11-30%20201256.png"
+    width="90%"
+    style="border: 3px solid #444; border-radius: 12px;"
+  />
+</p>
+
+
  
 <h2> Requirements🖥</h2>
 
