@@ -15,17 +15,17 @@
 
  ✔️ **With working login via tunneling on VPS**
 
- <h1 align="center"><b>💻 Easy CodeAssist Guide 💻 (Local PC & VPS)</b></h1>
+ <h1 align="center"><b>💻 Easy CodeAssist Guide (Local PC & VPS) 💻 </b></h1>
+
 
  <p align="center">
   <img 
     src="https://github.com/sarjil15/Easy-CodeAssist-Guide/blob/ef70c8fbc15510c7f444d590b677a162c925c483/assets/Screenshot%202025-11-30%20201256.png"
     width="90%"
     style="border: 3px solid #444; border-radius: 12px;"
-  />
+  /> 
 </p>
-
-
+<hr>
  
 <h2> Requirements🖥</h2>
 
@@ -79,14 +79,37 @@ A browser should have opened to http://localhost:3000
 - Now Open this in browser👉 http://localhost:3000
 
 - You’re ready to code.
+<hr>
 
+<h1 align="center"><b>☁️ Run CodeAssist on VPS ☁️</b></h1>
 
-
-
-
-
-
-
+✅ 1. Install Docker (Ubuntu VPS)
+```
+sudo install -m 0755 -d /etc/apt/keyrings && \
+sudo apt-get update && sudo apt-get install -y ca-certificates curl && \
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo tee /etc/apt/keyrings/docker.asc >/dev/null && \
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo ${UBUNTU_CODENAME:-$VERSION_CODENAME}) stable" | sudo tee /etc/apt/sources.list.d/docker.list >/dev/null && \
+sudo apt-get update && \
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+✅ 2. Clone CodeAssist
+```
+git clone https://github.com/gensyn-ai/codeassist.git
+```
+```
+cd codeassist
+```
+✅ 3. Install UV
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+```
+source ~/.bashrc
+```
+✅ 4. Start CodeAssist
+```
+uv run run.py
+```
 
 
 
